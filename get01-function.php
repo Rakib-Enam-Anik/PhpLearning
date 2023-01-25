@@ -4,6 +4,10 @@ trait test{
 
 }
 
+trait test2{
+    
+}
+
 class abc{
     use test;
 
