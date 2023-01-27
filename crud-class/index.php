@@ -10,11 +10,27 @@ echo "Insert result is : ";
 print_r($obj->getResult());
 */
 
-$obj->update('students',['student_name'=>'Emon Rahman','age'=>'28','city'=>'Potuakhali'], 'id="1"');
+//$obj->update('students',['student_name'=>'Emon Rahman','age'=>'28','city'=>'Potuakhali'], 'id="1"');
 
 //multiple change
 //$obj->update('students',['city'=>'Potuakhali'], 'city="Dhaka"');
-echo "Update result is : ";
+//echo "Update result is : ";
+//print_r($obj->getResult());
+
+//$obj->delete('students','age="20"');
+//echo "Delete result is : ";
+//print_r($obj->getResult());
+
+//$obj->sql('SELECT * FROM students ');
+//echo "SQL result is : ";
+//print_r($obj->getResult());
+
+//$obj->select('students', '*', null,'city= "Potuakhali"',null,null);
+//echo " SQL result is : ";
+//print_r($obj->getResult());
+
+$obj->select('students', 'id,student_name',null,null,null,4);
+echo " SQL result is : ";
 print_r($obj->getResult());
 
 ?>
