@@ -29,8 +29,17 @@ print_r($obj->getResult());
 //echo " SQL result is : ";
 //print_r($obj->getResult());
 
-$obj->select('students', 'id,student_name',null,null,null,4);
-echo " SQL result is : ";
+//$obj->select('students', 'id,student_name',null,null,null,4);
+//echo " SQL result is : ";
+//print_r($obj->getResult());
+
+$obj->select('students', '*',null,null,null,3);
+echo "\n\nSelect  result is : ";
 print_r($obj->getResult());
+
+echo $obj->pagination('students', null,null,3);
+
+//echo " SQL result is : ";
+//print_r($obj->getResult());
 
 ?>
