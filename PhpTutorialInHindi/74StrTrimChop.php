@@ -6,7 +6,7 @@ echo trim($str, "Yba"). "<br>";
 
 echo rtrim($str, "Yba"). "<br>";
 
-echo ltrim($str, "Yba");
+echo ltrim($str, "Yba"). "<br>";
 
 echo trim($str)
 
